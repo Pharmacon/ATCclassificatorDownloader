@@ -5,3 +5,5 @@ To configure webdriver simply add external selenium jar file to classpath. For a
 http://www.softwaretestingclub.com/profiles/blogs/selenium-2-0-webdriver-how-to-configure-selenium-webdriver-in
 
 Please do not use any other browsers, because it may cause additional configuration issues(do not use chrome,opera,explorer, etc.)
+
+Some fallers may be caused by slow internet connection and internal rlsnet.ru blockersor security system. To fix this issue please change constant START_ELEM to nesseccary value.
