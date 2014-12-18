@@ -200,8 +200,9 @@ public class RecursiveWalker implements Constants {
 			break;
 		case CODE:
 			String codeName = driver.getDriver().findElement(By.xpath(CODE_PATH)).getText();
-			temp = codeTemplate.replace("CODE_ATC", codeName.split(" ")[0]).replace("DESCRIPTION", codeName.replace("(¿“’)", "").replace(codeName.split(" ")[0], "").trim());
+			temp = codeTemplate.replace("CODE_ATC", codeName.split(" ")[0]).replace("DESCRIPTION", codeName.replace("(√Ä√í√ï)", "").replace(codeName.split(" ")[0], "").trim());
 			temp += createSpiderInstance(spider, codeName.split(" ")[0]);
+			break;
 		}
 		if (!temp.equals(null))
 			{
