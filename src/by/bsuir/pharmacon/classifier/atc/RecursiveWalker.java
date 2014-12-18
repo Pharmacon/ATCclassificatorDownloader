@@ -51,7 +51,7 @@ public class RecursiveWalker implements Constants {
 	public void walkATCClassification(){
 		List <WebElement> topelems = driver.getDriver().findElements(By.xpath(XPATH_FOR_TOP_GROUP));
 		List<String> topNames = createNamesListFromWebelemList(topelems);
-		for(int i=0;i<topNames.size();i++){
+		for(int i=START_ELEMENT;i<topNames.size();i++){
 			createCategoryFolder(topNames.get(i));
 			WebElement currentElementATC = driver.getDriver().findElement(By.linkText(topNames.get(i)));
 			spider.add(topNames.get(i).split(" ")[0].trim());
