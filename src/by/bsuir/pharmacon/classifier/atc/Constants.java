@@ -3,7 +3,7 @@ package by.bsuir.pharmacon.classifier.atc;
 public interface Constants {
 	
 	public static final String URL = "http://www.rlsnet.ru";
-	public static final String XPATH_FOR_LEFT_ATC_BUTTON = "//div[@class='my_menu_div']/a[contains(text(),'ÀÒÕ  êëàññèôèêàöèÿ') or (@id='atc_tree')]";
+	public static final String XPATH_FOR_LEFT_ATC_BUTTON = "//div[@class='my_menu_div']/a[contains(text(),'Ã€Ã’Ã•  ÃªÃ«Ã Ã±Ã±Ã¨Ã´Ã¨ÃªÃ Ã¶Ã¨Ã¿') or (@id='atc_tree')]";
 	public static final String XPATH_FOR_TOP_GROUP = "//*[@class='tree_fade']" ;
 	public static final String SECOND_LEVEL_PATH = "//div[@class='subcatlist']//li/a";
 	public static final String SECOND_LEVEL_PATHFOR_NAME_SEARCH = "//div[@class='subcatlist']//li/a[contains(text(),'NAME')]";
@@ -19,4 +19,5 @@ public interface Constants {
 	public static final String SECOND = "secondLevel";
 	public static final String THIRD = "thirdLevel";
 	public static final String CODE = "code";
+	public static final Integer START_ELEMENT = 0;
 }
